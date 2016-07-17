@@ -26,3 +26,6 @@ ALTER TABLE tasks ADD completed_at TIMESTAMP WITHOUT TIME ZONE DEFAULT null;
 -- change the updated_at column
 ALTER TABLE tasks ALTER COLUMN updated_at SET DEFAULT now();
 ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL;
+-- create a new task (Study SQL)
+INSERT INTO tasks
+VALUES (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);

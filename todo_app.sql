@@ -34,3 +34,7 @@ INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
 -- select all the titles of tasks that are not yet completed
 SELECT title FROM tasks WHERE completed_at IS NULL;
+-- update the task with a title of 'Study SQL' to be completed as of now
+UPDATE tasks
+SET completed_at = now()
+WHERE title = 'Study SQL';

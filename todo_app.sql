@@ -40,3 +40,12 @@ UPDATE tasks SET completed_at = now() WHERE title = 'Study SQL';
 SELECT title, description FROM tasks WHERE completed_at IS NULL;
 -- select all fields of every task sorted by creation date in descending order
 SELECT * FROM tasks ORDER BY created_at DESC;
+-- create a new task (mistake 1)
+INSERT INTO tasks (title, description)
+VALUES ('mistake 1', 'a test entry');
+-- create a new task (mistake 2)
+INSERT INTO tasks (title, description)
+VALUES ('mistake 2', 'another test entry');
+-- create a new task (mistake 3)
+INSERT INTO tasks (title, description)
+VALUES ('mistake 3', 'another test entry');

@@ -13,7 +13,7 @@ CREATE USER michael
 -- Create a table named tasks
 CREATE TABLE tasks (
   id SERIAL NOT NULL PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
   description TEXT,
   created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT now() NOT NULL,
   updated_at TIMESTAMP WITHOUT TIME ZONE,
@@ -29,3 +29,6 @@ ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL;
 -- create a new task (Study SQL)
 INSERT INTO tasks
 VALUES (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
+-- create a new task (Study PostgreSQL)
+INSERT INTO tasks (title, description)
+VALUES ('Study PostgreSQL', 'Read all the documentation');

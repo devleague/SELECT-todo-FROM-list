@@ -57,3 +57,5 @@ DELETE FROM tasks WHERE title = 'mistake 1';
 SELECT title, description FROM tasks WHERE title LIKE 'mistake%';
 -- delete all tasks that includes the word 'mistake' in the title
 DELETE FROM tasks WHERE title LIKE 'mistake%';
+-- select all fields of all tasks sorted by title in ascending order
+SELECT * FROM tasks ORDER BY title ASC;

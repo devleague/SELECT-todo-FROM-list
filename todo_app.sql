@@ -20,5 +20,6 @@ CREATE TABLE tasks (
   completed BOOLEAN DEFAULT false
   );
 -- remove the column named completed
-ALTER TABLE tasks
-DROP COLUMN completed;
+ALTER TABLE tasks DROP COLUMN completed;
+-- add a column to tasks named completed_at
+ALTER TABLE tasks ADD completed_at TIMESTAMP WITHOUT TIME ZONE DEFAULT null;

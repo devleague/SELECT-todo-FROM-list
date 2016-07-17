@@ -32,3 +32,5 @@ VALUES (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 -- create a new task (Study PostgreSQL)
 INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
+-- select all the titles of tasks that are not yet completed
+SELECT title FROM tasks WHERE completed_at IS NULL;

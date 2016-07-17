@@ -38,3 +38,5 @@ SELECT title FROM tasks WHERE completed_at IS NULL;
 UPDATE tasks SET completed_at = now() WHERE title = 'Study SQL';
 -- select all titles and descriptions of tasks that are not yet completed
 SELECT title, description FROM tasks WHERE completed_at IS NULL;
+-- select all fields of every task sorted by creation date in descending order
+SELECT * FROM tasks ORDER BY created_at DESC;

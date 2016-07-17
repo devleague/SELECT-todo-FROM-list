@@ -53,7 +53,18 @@ ALTER TABLE tasks
 ALTER TABLE tasks
   ALTER COLUMN updated_at SET DEFAULT now();
 
+SELECT * FROM tasks;
 
+UPDATE tasks
+  SET id = DEFAULT,
+  title = 'Study SQL',
+  description = 'Complete this exercise',
+  created_at = now(),
+  updated_at = now(),
+  completed_at = NULL;
+
+INSERT INTO tasks (title, description)
+  VALUES ('Study PostgreSQL', 'Read all the documentation');
 
 SELECT * FROM tasks;
 

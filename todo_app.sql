@@ -19,3 +19,6 @@ CREATE TABLE tasks (
   updated_at TIMESTAMP WITHOUT TIME ZONE,
   completed BOOLEAN DEFAULT false
   );
+-- remove the column named completed
+ALTER TABLE tasks
+DROP COLUMN completed;

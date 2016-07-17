@@ -53,3 +53,5 @@ VALUES ('mistake 3', 'another test entry');
 SELECT title FROM tasks WHERE title LIKE 'mistake%';
 -- delete the task that has a title of mistake 1
 DELETE FROM tasks WHERE title = 'mistake 1';
+-- select title and description fields of all tasks with a title that includes the word 'mistake'
+SELECT title, description FROM tasks WHERE title LIKE 'mistake%';

@@ -49,9 +49,7 @@ INSERT INTO tasks VALUES (
 INSERT INTO tasks (
   title,
   description
-)
-
-VALUES (
+) VALUES (
 'Study PostgreSQL',
 'Read all the documentation'
 );
@@ -76,9 +74,7 @@ SELECT *
 INSERT INTO tasks (
   title,
   description
-)
-
-VALUES (
+) VALUES (
   'mistake 2',
   'another test entry'
 );
@@ -86,9 +82,7 @@ VALUES (
 INSERT INTO tasks (
   title,
   description
-)
-
-VALUES (
+) VALUES (
   'third mistake',
   'another test entry'
 );

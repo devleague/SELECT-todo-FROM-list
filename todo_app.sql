@@ -66,8 +66,65 @@ UPDATE tasks
 INSERT INTO tasks (title, description)
   VALUES ('Study PostgreSQL', 'Read all the documentation');
 
-SELECT * FROM tasks;
+SELECT *
+  FROM tasks;
 
+SELECT title
+  FROM tasks
+  WHERE completed_at=NULL;
 
+UPDATE tasks
+  SET completed_at = now()
+  WHERE title='Study SQL';
+
+SELECT *
+  FROM tasks;
+
+INSERT INTO tasks (
+  title,
+  description
+  )
+  VALUES
+    ('mistake 1',
+      'a test entry'
+    );
+
+SELECT *
+  FROM tasks;
+
+INSERT INTO tasks (
+  title,
+  description
+  )
+  VALUES
+    ('mistake 2',
+      'another test entry'
+    );
+
+SELECT *
+  FROM tasks;
+
+INSERT INTO tasks (
+  title,
+  description
+  )
+  VALUES
+    ('third mistake',
+      'another test entry'
+    );
+
+SELECT *
+  FROM tasks;
+
+SELECT title
+  FROM tasks
+  WHERE title LIKE '%mistake%';
+
+DELETE FROM tasks
+  WHERE title LIKE '%mistake%';
+
+SELECT *
+  FROM tasks
+  ORDER BY title ASC;
 
 

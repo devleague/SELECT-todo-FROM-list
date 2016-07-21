@@ -1,3 +1,14 @@
+http://slides.com/jasonsewell/intro-to-sql
+
+psql
+
+psql -f todo_app.sql
+
+https://github.com/devleague/SELECT-todo-FROM-list
+https://github.com/devleague/Automotive-Index
+https://github.com/devleague/Denormal-Automotives
+https://github.com/devleague/Has-Many-Relationships
+
 # SELECT todo FROM list
 
 ### SQL CRUD Exercise in PostgreSQL
@@ -20,28 +31,28 @@ Write all of your SQL statements in todo_app.sql
   1. add a column to `tasks` named `completed_at`:timestamp, that may be NULL, and has a default value of `NULL`.
   1. change the `updated_at` column to not allow NULL values, and have a default value of `now()`
   1. create a new task, by only setting values (not defining which columns)
-  `id = default value`  
-  `title = 'Study SQL'`  
-  `description = 'Complete this exercise'`  
-  `created_at = now()`  
-  `updated_at = now()`  
+  `id = default value`
+  `title = 'Study SQL'`
+  `description = 'Complete this exercise'`
+  `created_at = now()`
+  `updated_at = now()`
   `completed_at = NULL`
-  1. create a new task  
-  `title = 'Study PostgreSQL'`  
-  `description = 'Read all the documentation'`  
+  1. create a new task
+  `title = 'Study PostgreSQL'`
+  `description = 'Read all the documentation'`
   1. select all the titles of tasks that are not yet completed
   1. update the task with a title of `'Study SQL'` to be completed as of now
   1. select all titles and descriptions of tasks that are not yet completed
   1. select all fields of every task sorted by creation date in descending order
-  1. create a new task  
-  `title = 'mistake 1'`  
-  `description = 'a test entry'`  
-  1. create a new task  
-  `title = 'mistake 2'`  
-  `description = 'another test entry'`  
-  1. create a new task  
-  `title = 'third mistake'`  
-  `description = 'another test entry'`  
+  1. create a new task
+  `title = 'mistake 1'`
+  `description = 'a test entry'`
+  1. create a new task
+  `title = 'mistake 2'`
+  `description = 'another test entry'`
+  1. create a new task
+  `title = 'third mistake'`
+  `description = 'another test entry'`
   1. select title fields of all tasks with a title that includes the word `'mistake'`
   1. delete the task that has a title of `mistake 1`
   1. select title and description fields of all tasks with a title that includes the word `'mistake'`
